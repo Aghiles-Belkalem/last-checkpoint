@@ -1,0 +1,33 @@
+.add-contact-form {
+  padding: 3rem;
+  font-family: "Roboto", serif;
+  font-size: medium;
+}
+button {
+  display: flex;
+  justify-self: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffc0cb;
+}
+button:hover {
+  background-color: #94bbe9;
+}
+.custom-file-upload {
+  display: flex;
+  justify-self: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffc0cb;
+  margin: 1rem;
+}
+
+.custom-file-upload:hover {
+  background-color: #94bbe9;
+}
+
+.input-img {
+  display: none;
+}
