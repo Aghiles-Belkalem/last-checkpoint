@@ -1,4 +1,54 @@
 # my-project
+# ContactHub
+# ContactHub est une application full-stack permettant de gérer vos contacts personnels. Vous pouvez ajouter, modifier, supprimer des contacts avec leurs informations (nom, prénom, email, téléphone, adresse, photo). Le système inclut une gestion d'authentification avec création de compte et connexion.
+
+# Technologies utilisées
+# Frontend : React, TypeScript
+# Backend : Node.js, Express
+# Authentification : JWT (JSON Web Token), Argon2 (pour le hachage des mots de passe)
+# Base de données : MySQL
+# Gestion de dépendances : npm
+# Installation
+# Clonez le projet :
+
+# bash
+# Copier
+# git clone git@github.com:Aghiles-Belkalem/last-checkpoint.git
+# Backend (Node.js + Express)
+
+# Dans le dossier server, installez les dépendances :
+
+ bash
+ Copier
+cd server
+npm install
+Frontend (React + TypeScript)
+
+Dans le dossier client, installez les dépendances :
+
+bash
+Copier
+cd client
+npm install
+Configurez votre environnement :
+
+# Créez un fichier .env dans le dossier server et ajoutez vos variables d'environnement :
+
+bash
+Copier
+DB_HOST=localhost
+DB_USER=your-mysql-username
+DB_PASSWORD=your-mysql-password
+DB_NAME=contacthub
+JWT_SECRET=your-jwt-secret
+## Remplacez les valeurs selon votre configuration.
+
+## Démarrer l'application :
+npm run dev.
+
+## Fonctionnalités
+## Authentification : Connexion et création de compte utilisateur.
+## Gestion des contacts : Ajouter, modifier, supprimer des contacts avec nom, prénom, email, téléphone, adresse, et photo
 
 Ce projet est un monorepo JS, suivant l'architecture React-Express-MySQL telle qu'enseignée à la Wild Code School (v7.1.7) :
 
