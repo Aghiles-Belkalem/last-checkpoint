@@ -1,5 +1,5 @@
-# my-project
-# ContactHub
+# Déffi final Projet full stack a la Wild Code School en seulement 48 heures : 
+# j'ai le plaisir de vous présenté mon application => " ContactHub " 
 # ContactHub est une application full-stack permettant de gérer vos contacts personnels. Vous pouvez ajouter, modifier, supprimer des contacts avec leurs informations (nom, prénom, email, téléphone, adresse, photo). Le système inclut une gestion d'authentification avec création de compte et connexion.
 
 # Technologies utilisées
