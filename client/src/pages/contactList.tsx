@@ -1,6 +1,7 @@
 import "../components/Css/contact.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ImgFetched from "../components/addressBook/imgTrack";
 
 type Contact = {
   id: number;
@@ -138,10 +139,9 @@ export default function ContactList() {
             <div key={contact.id} className="contact-card">
               <div className="contact-card-header">
                 {contact.photo_url ? (
-                  <img
-                    className="contact-photo"
-                    src={`${contact.photo_url}`}
-                    alt={`${contact.firstname} ${contact.lastname}`}
+                  <ImgFetched
+                    photo_url={contact.photo_url}
+                    token={`${localStorage.getItem("token")}`}
                   />
                 ) : (
                   <div className="contact-photo-placeholder">
