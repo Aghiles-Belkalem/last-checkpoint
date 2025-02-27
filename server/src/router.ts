@@ -25,7 +25,7 @@ router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
 /* ************************************************************************* */
-/*router.use(authMiddleware.verifyToken);*/
+router.use(authMiddleware.verifyToken);
 router.get("/api/user", userActions.browse);
 router.get("/api/user/:id", authMiddleware.verifyToken, userActions.read);
 router.put("/api/user/:id", userActions.edit);

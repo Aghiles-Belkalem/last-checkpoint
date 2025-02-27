@@ -1,6 +1,7 @@
 import "../Css/editContact.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import ImgFetched from "./imgTrack";
 
 type Contact = {
   id: number;
@@ -207,7 +208,12 @@ export default function EditContact() {
               className="input-img"
               onChange={handleFileChange}
             />
-            {contact.photo_url && <img src={contact.photo_url} alt="Profil" />}
+            {contact.photo_url && (
+              <ImgFetched
+                photo_url={contact.photo_url}
+                token={`${localStorage.getItem("token")}`}
+              />
+            )}
           </div>
 
           <button type="submit" className="submit-button">
